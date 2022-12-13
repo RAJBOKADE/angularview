@@ -1,0 +1,98 @@
+<div class="container-flex">
+    <div class="row">
+        <div class="col-xl-3 col-sm-6 col-12 mt-3" *ngFor="let card of cards">
+            <mat-card class="card">
+                <mat-card-content><span class="card_name">{{card.title}}</span></mat-card-content>
+                <mat-card-content><span class="card_number">
+                        <h1><b>{{card.subtitle}}</b></h1>
+                    </span>
+                    <span class="card_percentage" style="color: rgb(57, 194, 57);"><b>{{card.percentage}}</b></span>
+                    <span class="card_status">{{card.small}}</span></mat-card-content>
+                <span class="mattheme"> <mat-progress-bar mode="determinate"
+                        [value]="card.value"></mat-progress-bar></span>
+            </mat-card>
+        </div>
+    </div>
+
+    <div class="secondrow">
+        <div class="row">
+            <div class="col-lg-4">
+                <mat-card class="newmat">
+                    <mat-card-content>
+                        <p><b>
+                                <h4>Your Current Plan</h4>
+                            </b></p>
+                        <span>
+                            <h1>$19/Month</h1>
+                        </span>
+                        <p>. Max Listing Items</p>
+
+                        <button class="btn">Renew Now</button>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div class="col-lg-4 mt-2">
+                <mat-card class="trow">
+                    <mat-card-content>
+                        <p><b>
+                                <h4>Intermidiaete Plan</h4>
+                            </b></p>
+                        <span>
+                            <h1>$29/Month</h1>
+                        </span>
+                        <button class="btn">Renew Now</button>
+                    </mat-card-content>
+
+                </mat-card>
+
+            </div>
+            <div>
+                <mat-card class="secondsrow">
+                    <mat-card-content>
+                        <p><b>
+                                <h4>Intermidiaete Plan</h4>
+                            </b></p>
+                        <span>
+                            <h1>$29/Month</h1>
+                        </span>
+                        <button class="btn">Renew Now</button>
+                    </mat-card-content>
+
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="container-flex">
+    <div class="row">
+        <div class="col-xl-3 col-sm-6 col-12 mt-3" *ngFor="let card of cards">
+            <mat-card class="card">
+                <mat-card-content>Listed Property</mat-card-content>
+                <div>
+                <mat-card-content><h2><b>25647</b></h2><span style="color: rgb(37, 201, 37);"> <h5><b>03%</b></h5></span> <h5> This Week</h5></mat-card-content>
+            </div>
+                <mat-card-content><mat-progress-bar mode="determinate" color="warn" value="40"></mat-progress-bar>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- <div class="container-flex">
+    <div class="row">
+        <mat-card class="card">
+            <mat-card-content>
+
+            </mat-card-content>
+        </mat-card>
+        <mat-card class="card">
+            <mat-card-content>
+                
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div> -->

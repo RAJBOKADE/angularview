@@ -1,0 +1,47 @@
+// .abc{
+//     display: flex;
+//     flex-flow: row wrap;
+//     justify-content: space-around;
+// }
+
+// .xyz{
+//     display: flex;
+//     flex-flow: row wrap;
+//     justify-content: space-around;
+// }
+
+.container-flex {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card {
+    height: fit-content;
+}
+
+.newmat {
+    color: white;
+    background-color: rgb(65, 65, 153);
+    margin-top: 10px;
+    width: 350px;
+    height: 250px;
+}
+
+.btn {
+
+    background-color: palevioletred;
+}
+
+.trow {
+    background-color: yellowgreen;
+    width: 350px;
+    height: 250px;
+}
+
+.secondsrow {
+    background-color: aquamarine;
+    width: 350px;
+    height: 250px;
+}
+

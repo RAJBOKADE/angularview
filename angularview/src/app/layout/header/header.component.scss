@@ -1,0 +1,75 @@
+//  *{
+// background-color: rgba(218, 44, 151, 0.895);
+
+// }
+// }
+
+// .container{
+//    color: aliceblue;
+//    size: 10ex;
+// }
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.input-group {
+  position: relative;
+  top: 7px;
+  left: 66px;
+}
+
+.form-label {
+  background-color: #39cbc6;
+  position: relative;
+  top: 3px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+img {
+  position: relative;
+  left: 20px;
+}
+
+.example-icon {
+  position: relative;
+  left: 30rem;
+}
+
+.menu {
+  position: relative;
+  right: 30rem;
+}
+
+.search {
+  position: relative;
+  bottom: 32px;
+
+}
+
+.bell {
+  position: relative;
+  left: 28rem;
+  top: 4px;
+}
+
+.bell:hover {
+  color: red;
+}
+
+.messageBox:hover {
+  color: blue;
+}
+
+.searching {
+  border-radius: 6px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
