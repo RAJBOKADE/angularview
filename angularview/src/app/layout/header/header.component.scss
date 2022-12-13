@@ -73,3 +73,58 @@ img {
 .form-control {
   margin-bottom: 15px;
 }
+
+img {
+  width: 130px;
+  height: 40px;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.logout {
+
+  outline: none;
+  border: 0;
+  background: transparent;
+  position: relative;
+  left: 60rem;
+  bottom: 182px;
+  display: flex;
+}
+
+.user {
+  font-size: 14px;
+}
+
+mat-toolbar {
+  background: #f7f7f7;
+}
+
+.user-image {
+  border-radius: 50%;
+  width: 47px;
+  height: 45px;
+
+  &-icon {
+    height: 31px;
+    width: 35px;
+  }
+}
+
+::ng-deep {
+  .mat-menu-content {
+    width: 160px;
+  }
+}
+
+.menu {
+  display: inline-block;
+}
+
+.user-image {
+  left: 1px;
+}

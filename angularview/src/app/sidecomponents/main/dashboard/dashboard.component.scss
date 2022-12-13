@@ -24,7 +24,6 @@
     color: white;
     background-color: rgb(65, 65, 153);
     margin-top: 10px;
-    width: 350px;
     height: 250px;
 }
 
@@ -36,7 +35,7 @@
 .trow {
     background-color: yellowgreen;
     width: 350px;
-    height: 250px;
+
 }
 
 .secondsrow {
@@ -45,3 +44,7 @@
     height: 250px;
 }
 
+#MyChart {
+    height: 14rem;
+    // background-color: red;
+}
