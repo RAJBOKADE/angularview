@@ -1,42 +1,73 @@
 <div class="container-flex">
+    <h2><b>Dashboard - Listing</b></h2>
     <div class="row">
         <div class="col-xl-3 col-sm-6 col-12 mt-3" *ngFor="let card of cards">
             <mat-card class="card">
                 <mat-card-content><span class="card_name">{{card.title}}</span></mat-card-content>
-                <mat-card-content><span class="card_number">
+                <mat-card-content>
+                    <span class="card_number">
                         <h1><b>{{card.subtitle}}</b></h1>
                     </span>
                     <span class="card_percentage" style="color: rgb(57, 194, 57);"><b>{{card.percentage}}</b></span>
-                    <span class="card_status">{{card.small}}</span></mat-card-content>
+                    <span class="card_status">{{card.small}}</span>
+                </mat-card-content>
                 <span class="mattheme"> <mat-progress-bar mode="determinate"
                         [value]="card.value"></mat-progress-bar></span>
             </mat-card>
         </div>
     </div>
 
+
     <div class="row">
+        <div class="col-lg-4 mt-3">
+            <mat-card class="newmat">
+                <mat-card-content class="card-height">
+                    <p><b>
+                            <h4>Your Current Plan</h4>
+                        </b></p>
+                    <span>
+                        <h1>$19/Month</h1>
+                    </span>
+                    <p>. Max Listing Items</p>
+                    <button class="btn">Renew Now</button>
+                </mat-card-content>
+            </mat-card>
+        </div>
 
-        <mat-card class="newmat" [ngStyle]="{'width':'20rem','height':'14rem'}">
-            <mat-card-content>
-                <p><b>
-                        <h4>Your Current Plan</h4>
-                    </b></p>
-                <span>
-                    <h1>$19/Month</h1>
-                </span>
-                <p>. Max Listing Items</p>
-
-                <button class="btn">Renew Now</button>
-            </mat-card-content>
-        </mat-card>
-
-
-        <div class="col-lg-4 mt-4" [ngStyle]="{'width':'20rem','height':'14rem'}">
+        <div class="col-lg-4 mt-3">
             <mat-card>
-                <mat-card-content>
+                <mat-card-content class="card-height">
                     <canvas id="MyChart"></canvas>
                 </mat-card-content>
             </mat-card>
         </div>
 
+        <div class="col-lg-4 mt-3">
+            <mat-card>
+                <mat-card-content class="card-height">
+                    <img src="../../../../assets/Modern home.jpg">
+                    <h3><b>Modern Home, Boston</b></h3>
+                    <p>Structure sales Pvt. Ltd is boston’s reputed government construction company since 2011.</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
     </div>
+
+    <!-- <div class="scroll-container"
+            (mouseleave)="showScroll = false"
+            (mouseenter)="showScroll = true"
+            [ngClass]="{'show-scroll' : showScroll}">
+            <div *ngFor="let item of scrollItems">
+              {{ item }}
+            </div>
+          </div> -->
+
+
+          <div class="cdk-virtual-scroll-data-source-example">
+            <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport">
+              <div *cdkVirtualFor="let item of items" class="example-item">{{item}}</div>
+            </cdk-virtual-scroll-viewport>
+          </div>
+          
+
+</div>

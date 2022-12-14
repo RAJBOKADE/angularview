@@ -20,7 +20,8 @@ import { MailappComponent } from './pre-build-app/mailapp/mailapp.component';
 import { ContactsappComponent } from './pre-build-app/contactsapp/contactsapp.component';
 import { ChatappComponent } from './pre-build-app/chatapp/chatapp.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
-
+import { ScrollingModule } from '@angular/cdk/scrolling';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
 
 @NgModule({
@@ -39,9 +40,11 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     MatListModule,
     RouterModule,
     MatProgressBarModule,
-  
+    ScrollingModule
 
   ],
   exports: [MainComponent, PreBuildAppComponent]
 })
+
+
 export class SidecomponentsModule { }

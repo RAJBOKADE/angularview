@@ -1,3 +1,4 @@
+import { PathLocationStrategy } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'node_modules/chart.js'
 Chart.register(...registerables);
@@ -10,16 +11,14 @@ Chart.register(...registerables);
 export class DashboardComponent implements OnInit {
   type: any;
   public chart: any;
-  // dashboards=[{'viewValue':'listing'
 
-  // },{'viewValue':'Real Estate'},{'viewValue':'Crypto'},{'viewValue':'CRM'}]
-
-
+ 
   constructor() { }
 
 
   ngOnInit(): void {
     this.createChart();
+   
   }
 
   createChart() {
@@ -52,12 +51,16 @@ export class DashboardComponent implements OnInit {
     });
   }
 
+  items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
+
+//  items = [{
+//       'image':PathLocationStrategy, 'name':'Noah Owens', 'ratings': '⭐ 4.5 | ', 'deals':'25 Deals' 
+//  }]
+
+
   cards = [{ 'subtitle': '25363', 'title': 'Listed Property', 'percentage': ' 03%', 'small': ' This Week', 'value': '30.45' },
   { 'subtitle': '876', 'title': 'Serving Cities', 'percentage': '', 'small': ' 7 Cities This Week', 'value': '45.45' },
   { 'subtitle': '85658', 'title': 'Online Visitors', 'percentage': ' 86%', 'small': ' avg. 300', 'value': '67.45' },
   { 'subtitle': '6557', 'title': 'Online Queries', 'percentage': ' 35%', 'small': ' past month', 'value': '90.45' },
-    //{ 'subtitle': '$20','title': 'Your Current Plan','percentage': ' Expires in 80 days','small': ' past month' },
+]}
 
-  ]
-
-}

@@ -1,50 +1,72 @@
-// .abc{
-//     display: flex;
-//     flex-flow: row wrap;
-//     justify-content: space-around;
-// }
-
-// .xyz{
-//     display: flex;
-//     flex-flow: row wrap;
-//     justify-content: space-around;
-// }
-
 .container-flex {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .card {
-    height: fit-content;
+  height: fit-content;
 }
 
 .newmat {
-    color: white;
-    background-color: rgb(65, 65, 153);
-    margin-top: 10px;
-    height: 250px;
+  color: white;
+  background-color: rgb(65, 65, 153);
 }
 
 .btn {
 
-    background-color: palevioletred;
+  background-color: palevioletred;
 }
 
-.trow {
-    background-color: yellowgreen;
-    width: 350px;
-
+.card-height {
+  height: 160px;
 }
 
-.secondsrow {
-    background-color: aquamarine;
-    width: 350px;
-    height: 250px;
+.cdk-virtual-scroll-data-source-example .example-viewport {
+  margin-top: 15px;
+  height: 200px;
+  width: 700px;
+  border: 1px solid black;
 }
 
-#MyChart {
-    height: 14rem;
-    // background-color: red;
+.cdk-virtual-scroll-data-source-example .example-viewport .cdk-virtual-scroll-content-wrapper {
+  display: flex;
+  flex-direction: row;
 }
+
+.cdk-virtual-scroll-data-source-example .example-item {
+  width: 50px;
+  height: 100%;
+  writing-mode: horizontal-tb;
+}
+
+
+// .scroll-container {
+//     border: 2px solid silver;
+//     display: flex;
+//     align-items: center;
+//     overflow: hidden;
+
+//     &.hide-scrollbar {
+//       overflow: auto;
+//       &::-webkit-scrollbar {
+//         display: none;
+//       }
+//     }
+
+//     &.show-scroll {
+//       overflow: auto;
+//     }
+
+//     div {
+//       white-space: nowrap;
+//       background: #efefef;
+//       border: 1px solid #efefef;
+//       margin: .1rem;
+//       padding: .2rem .7rem;
+//       &:hover {
+//         cursor: pointer;
+//         border-color: #ccc;
+//       }
+//     }
+//   }
