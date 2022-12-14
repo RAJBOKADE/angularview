@@ -25,7 +25,7 @@
 .cdk-virtual-scroll-data-source-example .example-viewport {
   margin-top: 15px;
   height: 200px;
-  width: 700px;
+  width: 680px;
   border: 1px solid black;
 }
 
@@ -40,33 +40,8 @@
   writing-mode: horizontal-tb;
 }
 
-
-// .scroll-container {
-//     border: 2px solid silver;
-//     display: flex;
-//     align-items: center;
-//     overflow: hidden;
-
-//     &.hide-scrollbar {
-//       overflow: auto;
-//       &::-webkit-scrollbar {
-//         display: none;
-//       }
-//     }
-
-//     &.show-scroll {
-//       overflow: auto;
-//     }
-
-//     div {
-//       white-space: nowrap;
-//       background: #efefef;
-//       border: 1px solid #efefef;
-//       margin: .1rem;
-//       padding: .2rem .7rem;
-//       &:hover {
-//         cursor: pointer;
-//         border-color: #ccc;
-//       }
-//     }
-//   }
+.adjust{
+  margin-left: 45rem;
+  width: 20rem;
+  
+}

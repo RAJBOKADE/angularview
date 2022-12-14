@@ -53,21 +53,19 @@
         </div>
     </div>
 
-    <!-- <div class="scroll-container"
-            (mouseleave)="showScroll = false"
-            (mouseenter)="showScroll = true"
-            [ngClass]="{'show-scroll' : showScroll}">
-            <div *ngFor="let item of scrollItems">
-              {{ item }}
-            </div>
-          </div> -->
-
-
-          <div class="cdk-virtual-scroll-data-source-example">
+           <div class="cdk-virtual-scroll-data-source-example">
             <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport">
-              <div *cdkVirtualFor="let item of items" class="example-item">{{item}}</div>
+                <div *cdkVirtualFor="let item of items" class="example-item">{{item}}</div>
             </cdk-virtual-scroll-viewport>
-          </div>
-          
+        </div>
+
+        <div class="adjust">
+            <mat-card>
+                <mat-card-content>
+                    <b>Recent Activities</b>
+                </mat-card-content>
+            </mat-card>
+        </div>
+   
 
 </div>
