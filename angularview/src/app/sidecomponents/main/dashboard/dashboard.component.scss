@@ -25,7 +25,7 @@
 .cdk-virtual-scroll-data-source-example .example-viewport {
   margin-top: 15px;
   height: 200px;
-  width: 680px;
+  width: 650px;
   border: 1px solid black;
 }
 
@@ -41,7 +41,16 @@
 }
 
 .adjust{
+  align-items:center;
   margin-left: 45rem;
   width: 20rem;
   
 }
+
+.round{
+  margin-top: 15px;
+  border-radius: 50%;
+  height: 80px;
+  
+}
+

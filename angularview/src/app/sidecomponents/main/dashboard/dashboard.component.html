@@ -13,6 +13,7 @@
                 </mat-card-content>
                 <span class="mattheme"> <mat-progress-bar mode="determinate"
                         [value]="card.value"></mat-progress-bar></span>
+
             </mat-card>
         </div>
     </div>
@@ -53,19 +54,32 @@
         </div>
     </div>
 
-           <div class="cdk-virtual-scroll-data-source-example">
+    <div>
+        <!-- <div class="cdk-virtual-scroll-data-source-example">
             <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport">
-                <div *cdkVirtualFor="let item of items" class="example-item">{{item}}</div>
+                <div *cdkVirtualFor="let item of Employees" class="example-item">{{Employees}}</div>
             </cdk-virtual-scroll-viewport>
-        </div>
+        </div> -->
 
-        <div class="adjust">
-            <mat-card>
-                <mat-card-content>
-                    <b>Recent Activities</b>
-                </mat-card-content>
-            </mat-card>
-        </div>
-   
 
+        <div class="container-flex">
+            <div class="row">
+                <div class="col-lg-1" *ngFor="let Employee of Employees">
+                    <div>
+                        <img class="round" [src]='Employee.img'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="adjust">
+        <mat-card>
+            <mat-card-content>
+                <b>Recent Activities</b>
+            </mat-card-content>
+        </mat-card>
+    </div>
 </div>

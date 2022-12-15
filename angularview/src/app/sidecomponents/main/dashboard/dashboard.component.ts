@@ -12,13 +12,13 @@ export class DashboardComponent implements OnInit {
   type: any;
   public chart: any;
 
- 
+
   constructor() { }
 
 
   ngOnInit(): void {
     this.createChart();
-   
+
   }
 
   createChart() {
@@ -51,16 +51,33 @@ export class DashboardComponent implements OnInit {
     });
   }
 
-  items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
+  // items = Array.from({ length: 100000 }).map((_, i) => `Item #${i}`);
 
-//  items = [{
-//       'image':PathLocationStrategy, 'name':'Noah Owens', 'ratings': '⭐ 4.5 | ', 'deals':'25 Deals' 
-//  }]
+  //  items = [{
+  //       'image':PathLocationStrategy, 'name':'Noah Owens', 'ratings': '⭐ 4.5 | ', 'deals':'25 Deals' 
+  //  }]
 
 
-  cards = [{ 'subtitle': '25363', 'title': 'Listed Property', 'percentage': ' 03%', 'small': ' This Week', 'value': '30.45' },
-  { 'subtitle': '876', 'title': 'Serving Cities', 'percentage': '', 'small': ' 7 Cities This Week', 'value': '45.45' },
+  //   cards = [{ 'subtitle': '25363', 'title': 'Listed Property', 'percentage': ' 03%', 'small': ' This Week', 'value': '30.45' },
+  //   { 'subtitle': '876', 'title': 'Serving Cities', 'percentage': '', 'small': ' 7 Cities This Week', 'value': '45.45' },
+  //   { 'subtitle': '85658', 'title': 'Online Visitors', 'percentage': ' 86%', 'small': ' avg. 300', 'value': '67.45' },
+  //   { 'subtitle': '6557', 'title': 'Online Queries', 'percentage': ' 35%', 'small': ' past month', 'value': '90.45' },
+  // ]}
+
+  cards = [{ 'subtitle': '25363', 'title': 'Listed Property', 'percentage': ' 03%', 'small': ' This Week', 'value': '30.45', },
+  { 'subtitle': '876', 'title': 'Serving Cities', 'percentage': '', 'small': ' 7 Cities This Week', 'value': '45.45', },
   { 'subtitle': '85658', 'title': 'Online Visitors', 'percentage': ' 86%', 'small': ' avg. 300', 'value': '67.45' },
   { 'subtitle': '6557', 'title': 'Online Queries', 'percentage': ' 35%', 'small': ' past month', 'value': '90.45' },
-]}
+  ]
 
+
+Employees =[{'img':'../assets/noah-owens.jpg', 'Name': 'Noah Owens', 'Star': '⭐ 3.5 ', 'Deals': '27 Deals' },
+{ 'img':'../assets/ellen-manning.jpg', 'Name': 'Ellen Manning', 'Star': '⭐ 2.1 ', 'Deals': '21 Deals' },
+{ 'img':'../assets/jones.jpg', 'Name': 'Angel Jones', 'Star': '⭐ 4.7 ', 'Deals': '13 Deals' },
+{ 'img':'../assets/dollie.jpg', 'Name': 'Dollie Norton', 'Star': '⭐ 4.4 ', 'Deals': '21 Deals' },
+{ 'img':'../assets/joshua.jpg', 'Name': 'Joshua Brian', 'Star': '⭐ 4.3 ', 'Deals': '07 Deals' },
+{ 'img':'../assets/amay.jpg', 'Name': 'AmaayMathur', 'Star': '⭐ 4.3', 'Deals': '07 Deals' },
+{ 'img':'../assets/selena.jpg', 'Name': 'Selena', 'Star': '⭐ 4.4', 'Deals': '07 Deals' },
+{ 'img':'../assets/nikki.jpg', 'Name': 'Nikki Johnson', 'Star': '⭐ 5.0', 'Deals': '10 Deals' }
+]
+}
