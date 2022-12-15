@@ -54,24 +54,28 @@
         </div>
     </div>
 
-    <div>
-        <!-- <div class="cdk-virtual-scroll-data-source-example">
+
+    <!-- <div class="cdk-virtual-scroll-data-source-example">
             <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport">
                 <div *cdkVirtualFor="let item of Employees" class="example-item">{{Employees}}</div>
             </cdk-virtual-scroll-viewport>
         </div> -->
 
 
-        <div class="container-flex">
-            <div class="row">
-                <div class="col-lg-1" *ngFor="let Employee of Employees">
-                    <div>
-                        <img class="round" [src]='Employee.img'>
-                    </div>
-                </div>
+    <div class="container-flex">
+        <div class="row">
+            <div class="col-lg-1" *ngFor="let Employee of Employees">
+
+                <img class="round" [src]='Employee.img'>
+                <span>
+                    {{Employee.Name}}
+                    {{Employee.Star}}
+                    {{Employee.Deals}}
+                </span>
             </div>
         </div>
     </div>
+
 
 
 
@@ -79,6 +83,40 @@
         <mat-card>
             <mat-card-content>
                 <b>Recent Activities</b>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div>
+        <mat-card class="maincard">
+            <mat-card-content>
+                <b>Properties</b>
+
+                <div class="input-group rounded">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </mat-card-content>
+
+            <mat-card-content>
+                <div>
+                    <p></p>
+                    <button class="propertybtn">
+                        FOR SALE
+                    </button>
+
+                    <p></p>
+                    <div class="cardFont"> Property & Sidebar Agent </div>
+                    Sublevel, Hialeah, Florida
+                    $113,859 $6705/sqft
+                    Check in detail ->
+                    <div>
+                        <img class="nestedimage" src="../../../../assets/property-7.jpeg">
+                    </div>
+                </div>
             </mat-card-content>
         </mat-card>
     </div>

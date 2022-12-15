@@ -77,7 +77,7 @@ Employees =[{'img':'../assets/noah-owens.jpg', 'Name': 'Noah Owens', 'Star': '�
 { 'img':'../assets/dollie.jpg', 'Name': 'Dollie Norton', 'Star': '⭐ 4.4 ', 'Deals': '21 Deals' },
 { 'img':'../assets/joshua.jpg', 'Name': 'Joshua Brian', 'Star': '⭐ 4.3 ', 'Deals': '07 Deals' },
 { 'img':'../assets/amay.jpg', 'Name': 'AmaayMathur', 'Star': '⭐ 4.3', 'Deals': '07 Deals' },
-{ 'img':'../assets/selena.jpg', 'Name': 'Selena', 'Star': '⭐ 4.4', 'Deals': '07 Deals' },
-{ 'img':'../assets/nikki.jpg', 'Name': 'Nikki Johnson', 'Star': '⭐ 5.0', 'Deals': '10 Deals' }
+// { 'img':'../assets/selena.jpg', 'Name': 'Selena', 'Star': '⭐ 4.4', 'Deals': '07 Deals' },
+// { 'img':'../assets/nikki.jpg', 'Name': 'Nikki Johnson', 'Star': '⭐ 5.0', 'Deals': '10 Deals' }
 ]
 }
