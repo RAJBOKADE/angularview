@@ -11,9 +11,8 @@
                     <span class="card_percentage" style="color: rgb(57, 194, 57);"><b>{{card.percentage}}</b></span>
                     <span class="card_status">{{card.small}}</span>
                 </mat-card-content>
-                <span class="mattheme"> <mat-progress-bar mode="determinate"
-                        [value]="card.value"></mat-progress-bar></span>
-
+                <span class="mattheme"> <mat-progress-bar mode="determinate" [value]="card.value"></mat-progress-bar>
+                </span>
             </mat-card>
         </div>
     </div>
@@ -54,7 +53,6 @@
         </div>
     </div>
 
-
     <!-- <div class="cdk-virtual-scroll-data-source-example">
             <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport">
                 <div *cdkVirtualFor="let item of Employees" class="example-item">{{Employees}}</div>
@@ -65,7 +63,6 @@
     <div class="container-flex">
         <div class="row">
             <div class="col-lg-1" *ngFor="let Employee of Employees">
-
                 <img class="round" [src]='Employee.img'>
                 <span>
                     {{Employee.Name}}
@@ -75,9 +72,6 @@
             </div>
         </div>
     </div>
-
-
-
 
     <div class="adjust">
         <mat-card>
@@ -91,7 +85,6 @@
         <mat-card class="maincard">
             <mat-card-content>
                 <b>Properties</b>
-
                 <div class="input-group rounded">
                     <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
                         aria-describedby="search-addon" />
@@ -107,16 +100,45 @@
                     <button class="propertybtn">
                         FOR SALE
                     </button>
-
                     <p></p>
                     <div class="cardFont"> Property & Sidebar Agent </div>
                     Sublevel, Hialeah, Florida
                     $113,859 $6705/sqft
-                    Check in detail ->
+                    Check in detail
                     <div>
-                        <img class="nestedimage" src="../../../../assets/property-7.jpeg">
+                        <mat-card class="align">
+                            <mat-card-content>
+                                <img class="nestedimage" src="../../../../assets/property-7.jpeg">
+                            </mat-card-content>
+                        </mat-card>
                     </div>
                 </div>
+            </mat-card-content>
+            <mat-divider></mat-divider>
+
+        </mat-card>
+
+        <mat-card class="maincard">
+            <mat-card-content>
+                <p></p>
+                <button class="propertybtn">
+                    FOR SALE
+                </button>
+                <p></p>
+                <div class="cardFont"> Property & Sidebar Agent
+                    Sublevel, Hialeah, Florida
+                    $6705/sqft $6705/sqft
+                    Check in detail
+                </div>
+                <div>
+                    <img class="nestedimage" src="../../../../assets/property-6.jpeg">
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-content>
+                <div class="cardFont"></div>
             </mat-card-content>
         </mat-card>
     </div>

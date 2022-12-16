@@ -55,7 +55,7 @@
 }
 
 .maincard{
-  background-color: rgb(186, 197, 197);
+  background-color: rgb(247, 248, 248);
   width: 700px;
   height: auto;
 }
@@ -67,10 +67,15 @@
 
 .cardFont{
   font-size: 22px;
+  display: flex;
   
 }
 
 .nestedimage{
   height: 10rem;
-  margin-left: 26rem;
+ 
+}
+
+.align{
+  margin-left: 24.5rem;
 }

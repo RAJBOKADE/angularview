@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   {path:'widgets',component:WidgetsComponent},
   {path:'matrics',component:MatricsComponent},
-  {path:'layots',component:LayoutsComponent}
+  {path:'layouts',component:LayoutsComponent}
 ];
 
 @NgModule({
