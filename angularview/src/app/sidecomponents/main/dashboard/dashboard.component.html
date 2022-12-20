@@ -59,8 +59,7 @@
             </cdk-virtual-scroll-viewport>
         </div> -->
 
-
-    <div class="container-flex">
+    <!-- <div class="container-flex">
         <div class="row">
             <div class="col-lg-1" *ngFor="let Employee of Employees">
                 <img class="round" [src]='Employee.img'>
@@ -71,7 +70,21 @@
                 </span>
             </div>
         </div>
+    </div> -->
+
+
+    <!-- <div class="container-flex"> -->
+    <div class="row">
+        <div class="col-lg-1" *ngFor="let Employee of Employees">
+            <img class="round" [src]='Employee.img'>
+            <span>
+                {{Employee.Name}}
+                {{Employee.Star}}
+                {{Employee.Deals}}
+            </span>
+        </div>
     </div>
+    <!-- </div> -->
 
     <div class="adjust">
         <mat-card>
@@ -81,9 +94,50 @@
                 <h6>Today</h6>
                 <p></p>
                 <div>
-                    <img class="smallimg" src="../../../../assets/sMila Alba.jpg" alt="No image">
-                    <p><a href="url">Mila Alba left a 5 Star Review on Albama House</a></p>
+                    <img class="smallimg" src="../../../../assets/sMila Alba.jpg" alt="No image" a href="url"> <a
+                        href="url"> Mila Alba left a 5 Star Review on Albama House</a>
+                    <p></p>
                 </div>
+
+                <div>
+                    <img class="smallimg" src="../../../../assets/amay.jpg" alt="No image" a href="url"> <a href="url">
+                        Call request for Bob Builder for the property Dmirti House</a>
+                    <p></p>
+                </div>
+
+                <div>
+                    <img class="smallimg" src="../../../../assets/jones.jpg" alt="No image" a href="url"> <a href="url">
+                        Congratulations Tom! for joining the club</a>
+                    <p></p>
+                </div>
+
+                <div>
+                    <img class="smallimg" src="../../../../assets/joshua.jpg" alt="No image" a href="url"> <a
+                        href="url"> Welcome to a new Agent Tom Moody in the Company</a>
+                    <p></p>
+                </div>
+                <p></p>
+                <h6>Yesterday</h6>
+                <p></p>
+
+                <div>
+                    <img class="smallimg" src="../../../../assets/dollie.jpg" alt="No image" a href="url"> <a
+                        href="url"> Welcome to a new Agent Tom Moody in the Company</a>
+                    <p></p>
+                </div>
+
+                <div>
+                    <img class="smallimg" src="../../../../assets/ellen-manning.jpg" alt="No image" a href="url"> <a
+                        href="url"> Welcome to a new Agent Tom Moody in the Company</a>
+                    <p></p>
+                </div>
+
+                <div>
+                    <img class="smallimg" src="../../../../assets/dollie.jpg" alt="No image" a href="url"> <a
+                        href="url"> Welcome to a new Agent Tom Moody in the Company</a>
+                    <p></p>
+                </div>
+
             </mat-card-content>
         </mat-card>
     </div>
@@ -109,8 +163,10 @@
                     </button>
                     <p></p>
                     <div class="cardFont"> Property & Sidebar Agent </div>
-                    Sublevel, Hialeah, Florida
-                    $113,859 $6705/sqft
+                    <p></p>
+                    <p>Sublevel, Hialeah, Florida</p>
+                    <h2><b>$113,859</b></h2>
+                    <h6>$6705/sqft</h6>
                     Check in detail
                     <div>
                         <mat-card class="align">
@@ -131,8 +187,10 @@
                     </button>
                     <p></p>
                     <div class="cardFont"> Property & Sidebar Agent </div>
-                    Sublevel, Hialeah, Florida
-                    $113,859 $6705/sqft
+                    <p></p>
+                    <p>Sublevel, Hialeah, Florida</p>
+                    <h2><b>$113,859</b></h2>
+                    <h6>$6705/sqft</h6>
                     Check in detail
                     <div>
                         <mat-card class="align">
@@ -153,8 +211,10 @@
                     </button>
                     <p></p>
                     <div class="cardFont"> Property & Sidebar Agent </div>
-                    Sublevel, Hialeah, Florida
-                    $113,859 $6705/sqft
+                    <p></p>
+                    <p>Sublevel, Hialeah, Florida</p>
+                    <h2><b>$113,859</b></h2>
+                    <h6>$6705/sqft</h6>
                     Check in detail
                     <div>
                         <mat-card class="align">
