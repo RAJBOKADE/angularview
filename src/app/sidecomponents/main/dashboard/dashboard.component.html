@@ -1,0 +1,223 @@
+<div class="container-flex">
+    <h2><b>Dashboard - Listing</b></h2>
+    <div class="row">
+        <div class="col-xl-3 col-sm-6 col-12 mt-3" *ngFor="let card of cards">
+            <mat-card class="card">
+                <mat-card-content><span class="card_name">{{card.title}}</span></mat-card-content>
+                <mat-card-content>
+                    <span class="card_number">
+                        <h1><b>{{card.subtitle}}</b></h1>
+                    </span>
+                    <span class="card_percentage" style="color: rgb(57, 194, 57);"><b>{{card.percentage}}</b></span>
+                    <span class="card_status">{{card.small}}</span>
+                </mat-card-content>
+                <span class="mattheme"> <mat-progress-bar mode="determinate" [value]="card.value"></mat-progress-bar>
+                </span>
+            </mat-card>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-4 mt-3">
+            <mat-card class="newmat">
+                <mat-card-content class="card-height">
+                    <p><b>
+                            <h4>Your Current Plan</h4>
+                        </b></p>
+                    <span>
+                        <h1>$19/Month</h1>
+                    </span>
+                    <p>. Max Listing Items</p>
+                    <button class="btn">Renew Now</button>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div class="col-lg-4 mt-3">
+            <mat-card>
+                <mat-card-content class="card-height">
+                    <canvas id="MyChart"></canvas>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div class="col-lg-4 mt-3">
+            <mat-card>
+                <mat-card-content class="card-height">
+                    <img src="../../../../assets/Modern home.jpg">
+                    <h3><b>Modern Home, Boston</b></h3>
+                    <p>Structure sales Pvt. Ltd is boston’s reputed government construction company since 2011.</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+
+    <!-- <div class="cdk-virtual-scroll-data-source-example">
+            <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport">
+                <div *cdkVirtualFor="let item of Employees" class="example-item">{{Employees}}</div>
+            </cdk-virtual-scroll-viewport>
+        </div> -->
+
+    <!-- <div class="container-flex"> -->
+    <div class="row">
+        <div class="col-lg-1" *ngFor="let Employee of Employees">
+            <img class="round" [src]='Employee.img'>
+            <span>
+                {{Employee.Name}}
+                {{Employee.Star}}
+                {{Employee.Deals}}
+            </span>
+        </div>
+    </div>
+    <!-- </div> -->
+
+
+    <p></p>
+
+    <!-- last row -->
+    <div>
+        <mat-card class="maincard">
+            <mat-card-content>
+                <b>Properties</b>
+                <div class="input-group rounded">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </mat-card-content>
+
+            <mat-card-content>
+                <div class="propertieslist">
+                    <p></p>
+                    <button class="propertybtn">
+                        FOR SALE
+                    </button>
+                    <p></p>
+                    <div class="cardFont"> Property & Sidebar Agent </div>
+                    <p></p>
+                    <p>Sublevel, Hialeah, Florida</p>
+                    <h2><b>$113,859</b></h2>
+                    <h6>$6705/sqft</h6>
+                    Check in detail                   
+                        <mat-card class="align">
+                            <mat-card-content>
+                                <img class="nestedimage" src="../../../../assets/property-7.jpeg">
+                            </mat-card-content>
+                        </mat-card>                    
+                </div>
+            </mat-card-content>
+            <!-- <mat-divider></mat-divider> -->
+
+            <mat-card-content>
+                <div>
+                    <p></p>
+                    <button class="propertybtn">
+                        FOR SALE
+                    </button>
+                    <p></p>
+                    <div class="cardFont"> Property & Sidebar Agent </div>
+                    <p></p>
+                    <p>Sublevel, Hialeah, Florida</p>
+                    <h2><b>$113,859</b></h2>
+                    <h6>$6705/sqft</h6>
+                    Check in detail
+                    <div>
+                        <mat-card class="align">
+                            <mat-card-content>
+                                <img class="nestedimage" src="../../../../assets/property-6.jpeg">
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </div>
+            </mat-card-content>
+            <mat-divider></mat-divider>
+
+            <mat-card-content>
+                <div>
+                    <p></p>
+                    <button class="propertybtn">
+                        FOR SALE
+                    </button>
+                    <p></p>
+                    <div class="cardFont"> Property & Sidebar Agent </div>
+                    <p></p>
+                    <p>Sublevel, Hialeah, Florida</p>
+                    <h2><b>$113,859</b></h2>
+                    <h6>$6705/sqft</h6>
+                    Check in detail
+                    <div>
+                        <mat-card class="align">
+                            <mat-card-content>
+                                <img class="nestedimage" src="../../../../assets/property-5.jpeg">
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </div>
+            </mat-card-content>
+            <mat-divider></mat-divider>
+        </mat-card>
+
+
+        <div class="adjust">
+            <mat-card class="recentfield">
+                <mat-card-content>
+                    <b>Recent Activities</b>
+
+                    <h6>Today</h6>
+                    <p></p>
+                    <div>
+                        <img class="smallimg" src="../../../../assets/nikki.jpg" alt="No image" a href="url"> <a
+                            href="url"> Mila Alba left a 5 Star Review on Albama House</a>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <img class="smallimg" src="../../../../assets/amay.jpg" alt="No image" a href="url"> <a
+                            href="url">
+                            Call request for Bob Builder for the property Dmirti House</a>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <img class="smallimg" src="../../../../assets/jones.jpg" alt="No image" a href="url"> <a
+                            href="url">
+                            Congratulations Tom! for joining the club</a>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <img class="smallimg" src="../../../../assets/joshua.jpg" alt="No image" a href="url"> <a
+                            href="url"> Welcome to a new Agent Tom Moody in the Company</a>
+                        <p></p>
+                    </div>
+                    <p></p>
+                    <h6>Yesterday</h6>
+                    <p></p>
+
+                    <div>
+                        <img class="smallimg" src="../../../../assets/dollie.jpg" alt="No image" a href="url"> <a
+                            href="url"> Welcome to a new Agent Tom Moody in the Company</a>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <img class="smallimg" src="../../../../assets/ellen-manning.jpg" alt="No image" a href="url"> <a
+                            href="url"> Welcome to a new Agent Tom Moody in the Company</a>
+                        <p></p>
+                    </div>
+
+                    <div>
+                        <img class="smallimg" src="../../../../assets/dollie.jpg" alt="No image" a href="url"> <a
+                            href="url"> Welcome to a new Agent Tom Moody in the Company</a>
+                        <p></p>
+                    </div>
+
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    <!-- Recent Activities -->
+</div>

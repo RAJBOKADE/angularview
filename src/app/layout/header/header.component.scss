@@ -1,0 +1,119 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.input-group {
+  position: relative;
+  top: 7px;
+  left: 66px;
+}
+
+.form-label {
+  background-color: #39cbc6;
+  position: relative;
+  top: 3px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+img {
+  position: relative;
+  left: 20px;
+}
+
+.example-icon {
+  position: relative;
+  left: 30rem;
+}
+
+.menu {
+  position: relative;
+  right: 30rem;
+}
+
+// .search {
+//   position: relative;
+//   bottom: 32px;
+
+// }
+
+.bell {
+  position: relative;
+  left: 28rem;
+  top: 4px;
+}
+
+.bell:hover {
+  color: red;
+}
+
+.messageBox:hover {
+  color: blue;
+}
+
+.searching {
+  border-radius: 6px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+img {
+  width: 100px;
+  height: 30px;
+}
+
+ul {
+  li {
+    list-style: none;
+  }
+}
+
+.logout {
+
+  outline: none;
+  border: 0;
+  background: transparent;
+  position: relative;
+  left: 60rem;
+  bottom: 182px;
+  display: flex;
+}
+
+.user {
+  font-size: 14px;
+}
+
+mat-toolbar {
+  background: #f7f7f7;
+}
+
+.user-image {
+  border-radius: 50%;
+  width: 47px;
+  height: 45px;
+
+  &-icon {
+    height: 31px;
+    width: 35px;
+  }
+}
+
+::ng-deep {
+  .mat-menu-content {
+    width: 160px;
+  }
+}
+
+.menu {
+  display: inline-block;
+}
+
+.user-image {
+  left: 1px;
+}
