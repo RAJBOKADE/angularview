@@ -1,0 +1,10 @@
+<ul>
+    <li class="list-group-item" *ngFor="let value of values">
+        <div class="form-check"> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <span> <input class="star" type="checkbox" title="bookmark page" checked /></span>
+            <img ngClass="image" [src]="value.image" alt="image"> {{value.name}} | {{value.discription}}
+        </div>
+        <p>{{ value.discription}}</p>
+        <mat-divider></mat-divider>
+    </li>
+</ul>

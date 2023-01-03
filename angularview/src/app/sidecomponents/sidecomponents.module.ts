@@ -22,11 +22,14 @@ import { ChatappComponent } from './pre-build-app/chatapp/chatapp.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import { SidebarComponent } from './pre-build-app/mailapp/sidebar/sidebar.component';
+import { InboxComponent } from './pre-build-app/mailapp/inbox/inbox.component';
+import { SentComponent } from './pre-build-app/mailapp/sent/sent.component';
 
 
 @NgModule({
   declarations: [DashboardComponent,
-    WidgetsComponent, MainComponent, MatricsComponent, LayoutsComponent, PreBuildAppComponent, TaskmanagerComponent, MailappComponent, ContactsappComponent, ChatappComponent,],
+    WidgetsComponent, MainComponent, MatricsComponent, LayoutsComponent, PreBuildAppComponent, TaskmanagerComponent, MailappComponent, ContactsappComponent, ChatappComponent, SidebarComponent, InboxComponent, SentComponent,],
   imports: [
     CommonModule,
     MatButtonModule,

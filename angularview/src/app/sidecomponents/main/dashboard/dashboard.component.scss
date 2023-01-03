@@ -44,9 +44,15 @@
   
   align-items:center;
   margin-left: 45rem;
-  width: 30rem;
+  bottom: 50px;
+  //width: 30rem;
   height: auto;
+  //overflow-x: scroll;
   
+}
+.sized{
+  position: relative;
+  bottom: 155px;
 }
 
 .round{
@@ -61,6 +67,7 @@
   background-color: rgb(247, 248, 248);
   width: 690px;
   height: auto;
+  bottom: 30rem;
 }
 
 .propertybtn{
@@ -87,5 +94,35 @@
   height: 2.5rem;
 }
 
+
+.adjustimg {
+
+  position: relative;
+
+  border-radius: 200rem;
+
+  height: 98px;
+
+  padding: 10px;
+
+}
+
+
+
+.rows{
+
+  width: 650px;
+
+  overflow-y: scroll;
+
+   border: 1px solid;
+
+}
+
+// .deal{
+
+//   border:1px solid;
+
+// }
 
 

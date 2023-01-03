@@ -1,0 +1,39 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened class="example-drawer">
+        <mat-list>
+            <div class="messages">
+                <div><mat-icon ngClass="mail-icon">mail</mat-icon>Messages</div>
+            </div>
+            <mat-divider></mat-divider>
+            <button type="button" ngClass="mail-button"><i class="bi bi-pen"></i>Compose</button>
+            <mat-list-item>MAIN</mat-list-item>
+            <mat-list-item routerLinkActive="list-item-active" routerLink="/mails/inbox"><i
+                    class="bi bi-inbox"></i>Inbox</mat-list-item>
+            <mat-list-item routerLinkActive="list-item-active" routerLink="/mails/sent"><i
+                    class="bi bi-send"></i>Sent</mat-list-item>
+            <mat-list-item routerLinkActive="list-item-active"><i
+                    class="bi bi-envelope-paper"></i>Drafts</mat-list-item>
+            <mat-list-item routerLinkActive="list-item-active"><i
+                    class="bi bi-exclamation-octagon-fill"></i>Spam</mat-list-item>
+            <mat-list-item routerLinkActive="list-item-active"><i class="bi bi-trash"></i>Trash</mat-list-item>
+            <mat-list-item routerLinkActive="list-item-active"><i class="bi bi-archive"></i>Archive</mat-list-item>
+        </mat-list>
+    </mat-drawer>
+    <mat-toolbar class="toolbar">
+        <div class="row">
+            <div class="col-lg-9 ">
+                <div class="mail-search">
+                    <input type="search" class="form-control rounded" placeholder="Search in mails..."
+                        aria-label="Search" aria-describedby="search-addon" />
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div ngClass="mail-notify">
+                    <mat-icon>notification_important</mat-icon>
+                </div>
+            </div>
+        </div>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
+    <router-outlet></router-outlet>
+</mat-drawer-container>

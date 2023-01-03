@@ -53,27 +53,6 @@
         </div>
     </div>
 
-    <!-- <div class="cdk-virtual-scroll-data-source-example">
-            <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport">
-                <div *cdkVirtualFor="let item of Employees" class="example-item">{{Employees}}</div>
-            </cdk-virtual-scroll-viewport>
-        </div> -->
-
-    <!-- <div class="container-flex">
-        <div class="row">
-            <div class="col-lg-1" *ngFor="let Employee of Employees">
-                <img class="round" [src]='Employee.img'>
-                <span>
-                    {{Employee.Name}}
-                    {{Employee.Star}}
-                    {{Employee.Deals}}
-                </span>
-            </div>
-        </div>
-    </div> -->
-
-
-    <!-- <div class="container-flex"> -->
     <div class="row">
         <div class="col-lg-1" *ngFor="let Employee of Employees">
             <img class="round" [src]='Employee.img'>
@@ -84,13 +63,25 @@
             </span>
         </div>
     </div>
+
+
+    <!-- <div class="rows">
+        <div class="col-lg-2 deal" *ngFor="let dealer of Employees">
+            <img class="adjustimg" [src]="dealer.img" alt="dealer images"><br>
+            <span> {{dealer.Name}}</span><br>
+            <span> {{dealer.Star}}</span>
+            <span class="fa fa-star checked"></span>
+            <span>{{dealer.Deals}}</span>
+        </div>
+    </div> -->
+
+
     <!-- </div> -->
 
     <div class="adjust">
-        <mat-card>
+        <mat-card class="sized">
             <mat-card-content>
                 <b>Recent Activities</b>
-
                 <h6>Today</h6>
                 <p></p>
                 <div>

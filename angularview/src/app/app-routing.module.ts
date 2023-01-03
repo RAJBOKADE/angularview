@@ -4,14 +4,26 @@ import { DashboardComponent } from './sidecomponents/main/dashboard/dashboard.co
 import { LayoutsComponent } from './sidecomponents/main/layouts/layouts.component';
 import { MatricsComponent } from './sidecomponents/main/matrics/matrics.component';
 import { WidgetsComponent } from './sidecomponents/main/widgets/widgets.component';
+import { InboxComponent } from './sidecomponents/pre-build-app/mailapp/inbox/inbox.component';
+import { MailappComponent } from './sidecomponents/pre-build-app/mailapp/mailapp.component';
+import { SidebarComponent } from './sidecomponents/pre-build-app/mailapp/sidebar/sidebar.component';
 
 const routes: Routes = [
   {
-    path:'',component:DashboardComponent
+    path: '', component: DashboardComponent
   },
-  {path:'widgets',component:WidgetsComponent},
-  {path:'matrics',component:MatricsComponent},
-  {path:'layouts',component:LayoutsComponent}
+  { path: 'widgets', component: WidgetsComponent },
+  { path: 'matrics', component: MatricsComponent },
+  { path: 'layouts', component: LayoutsComponent },
+  {
+    path: 'mails', component: MailappComponent,
+    children: [
+      //{ path: 'sidebar', component: SidebarComponent },
+      { path: 'inbox', component: InboxComponent },
+
+    ]
+  }
+
 ];
 
 @NgModule({
